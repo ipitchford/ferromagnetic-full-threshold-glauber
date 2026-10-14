@@ -1,0 +1,16 @@
+name: Package checks
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.9', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -B verify.py
+      - run: python -B -O verify.py
+      - run: python -B check_manifest.py

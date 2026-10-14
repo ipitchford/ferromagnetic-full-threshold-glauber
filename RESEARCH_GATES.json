@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0",
+  "contributionMap": [
+    {
+      "claim": "Near-linear worst-start mixing across the strict heterogeneous field envelope",
+      "unit": "statement",
+      "paperLocation": "paper.tex thm:main",
+      "searches": [
+        {
+          "date": "2026-10-14",
+          "query": "Check supplied literature comparison against exact FGY v2 target and MY v1 hypotheses",
+          "corpus": "bounded primary arXiv statements and supplied review; not exhaustive search"
+        }
+      ],
+      "closestPriorWork": "FGY v2 Theorems 5–6; MY v1 Theorem 1.4",
+      "verdict": "new-in-bounded-search"
+    },
+    {
+      "claim": "Integrable covariance plus degree/bias trimming",
+      "unit": "method",
+      "paperLocation": "paper.tex lem:stability through thm:main",
+      "searches": [
+        {
+          "date": "2026-10-14",
+          "query": "Scalar field criterion versus relative marginal stability, computation-tree boundary interface",
+          "corpus": "FGY v2, MY v1, CFYZ v1 relevant definitions"
+        }
+      ],
+      "closestPriorWork": "Imported influence/computation-tree machinery and entropy criterion; FGY startup antecedent",
+      "verdict": "partially-known-cited"
+    },
+    {
+      "claim": "Gap, nonuniform comparison and deterministic pinning transfer",
+      "unit": "proof",
+      "paperLocation": "paper.tex lem:transfer and prop:gap",
+      "searches": [
+        {
+          "date": "2026-10-14",
+          "query": "MY Proposition 2.1 exact hypotheses; elementary Poincare and coupling derivations",
+          "corpus": "primary statement inspection and bounded analytic extension"
+        }
+      ],
+      "closestPriorWork": "MY v1 Proposition 2.1; standard Dirichlet variational comparison and coupling",
+      "verdict": "known-cited"
+    }
+  ],
+  "sourcesReadInFull": [
+    {
+      "citation": "FGY arXiv2604.00963v2",
+      "usedFor": "Envelope, influence and computation-tree interfaces",
+      "readWhat": "Relevant definitions/theorems and interfaces only; not the complete paper or an independent re-proof",
+      "date": "2026-10-14",
+      "evidenceLocator": "https://arxiv.org/html/2604.00963v2"
+    },
+    {
+      "citation": "MY arXiv2609.21936v1",
+      "usedFor": "Scalar stability, entropy/gap assumptions and clock",
+      "readWhat": "Definition 1.1, Theorem 1.4, Proposition 2.1, normalization discussion; not complete source proof",
+      "date": "2026-10-14",
+      "evidenceLocator": "https://arxiv.org/html/2609.21936v1"
+    },
+    {
+      "citation": "CFYZ arXiv2203.07771v1",
+      "usedFor": "Relative odds stability comparator",
+      "readWhat": "Definition 1.9 and relevant criterion; not complete paper",
+      "date": "2026-10-14",
+      "evidenceLocator": "https://arxiv.org/pdf/2203.07771v1"
+    }
+  ],
+  "readingDisclosure": "The legacy field name sourcesReadInFull is not an assertion of complete-paper reading. Each readWhat gives the actual bounded scope. Imported proofs were not fully reconstructed.",
+  "limitationTriage": [
+    {
+      "limitation": "Uniform untrimmed ordinary LSI",
+      "closingQuestion": "Does the claimed mixing imply such LSI?",
+      "triedOrSearched": "Two isolated spins with p tending to zero",
+      "estimatedCost": "short analytic calculation",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Direct degree-uniform older marginal-stability route",
+      "closingQuestion": "Does the required relative odds bound follow?",
+      "triedOrSearched": "Exact star odds ratio (3/2)^d",
+      "estimatedCost": "short analytic calculation",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "O(n log n) and threshold endpoint",
+      "closingQuestion": "Can trimming or source bounds remove the remaining loss and boundary restriction?",
+      "triedOrSearched": "Inspected existing proof obligations; no sharper theorem proved",
+      "estimatedCost": "unknown substantive research",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Current argument retains log squared and strict source envelope",
+      "whyNotClosedNow": "Routine corollaries do not close these obligations"
+    },
+    {
+      "limitation": "External review and formal verification",
+      "closingQuestion": "Do internal checks establish these?",
+      "triedOrSearched": "Assurance boundary inspection",
+      "estimatedCost": "external or substantial further work",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Not provided by written internal checking or finite replay",
+      "whyNotClosedNow": "Retain unrefereed status"
+    }
+  ],
+  "extensionScout": {
+    "by": "Codex internal targeted checker and revising agent",
+    "date": "2026-10-14",
+    "proposals": [
+      "untrimmed relaxation",
+      "fixed nonuniform selection",
+      "general deterministic pinning transfer"
+    ],
+    "actions": [
+      "Added gap and nonuniform gap only",
+      "Added elementary transfer lemma with product/full-support assumptions",
+      "Did not manufacture nonuniform mixing or four-star significance"
+    ]
+  }
+}

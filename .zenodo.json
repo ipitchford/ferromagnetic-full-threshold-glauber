@@ -1,0 +1,29 @@
+{
+  "title": "Near-linear Glauber mixing below the full ferromagnetic field threshold",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Unrefereed written-proof candidate for O(n log²(2n) log(1/epsilon)) worst-start uniformly random-site heatbath mixing throughout the stated strict heterogeneous ferromagnetic field regime, with unrestricted degrees and no uniform individual minimum-mass assumption. Combines imported influence and scalar-field entropy results with an integrable covariance rate and deterministic trimming. Includes relaxation and finite-horizon coupling consequences and explicit limits of direct entropy approaches. Finite exact checks are diagnostics, not formal verification or external peer review.",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "2.0.0-candidate",
+  "publication_date": "2026-10-14",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "Glauber dynamics",
+    "ferromagnetic spin systems",
+    "mixing time",
+    "spectral independence",
+    "deterministic pinning"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/ferromagnetic-full-threshold-glauber",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Verifier: Python 3 standard library only; fractions.Fraction for mathematical arithmetic.
+Commands from repository root:
+  python3 -B verify.py
+  python3 -B -O verify.py
+  python3 -B verify.py --negative-control retained-clock-not-lazy
+The last command intentionally exits 1 when the corrupted identity is rejected.
+No network, third-party Python packages or stochastic sampling are needed.
+LaTeX source uses article, geometry, amsmath, amssymb, amsthm, mathtools,
+fontenc, lmodern and hyperref. Runtime/compiler versions and actual replay
+results must be recorded by execution receipts, not inferred from this file.
+

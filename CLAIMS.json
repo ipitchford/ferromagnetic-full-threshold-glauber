@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "version": "2.0.0-candidate",
+  "author": "Anonymous",
+  "research_status": "unrefereed candidate",
+  "publication_completion_asserted": false,
+  "claims": [
+    {
+      "id": "uniform-worst-start-mixing",
+      "statement": "For fixed positive beta<=1<gamma, beta*gamma>1 and 0<lambda<(gamma/beta)^(sqrt(beta*gamma)/(sqrt(beta*gamma)-1)), every finite simple n>=2 graph with finite positive lambda_v<lambda, beta_e<=beta, gamma_e>=gamma and 1<beta_e*gamma_e<=beta*gamma has uniformly random-site heatbath mixing time O_{beta,gamma,lambda}(n log^2(2n) log(1/epsilon)), 0<epsilon<=1/2, from every initial state.",
+      "evidence_type": "universal written proof",
+      "proof_location": "paper.tex: thm:main",
+      "dependencies": [
+        "integrable-covariance",
+        "startup-trimming",
+        "finite-horizon-transfer",
+        "Miao–Yin v1 Theorem 1.4"
+      ],
+      "finite_verifier_scope": "Selected finite identities only; not the universal theorem.",
+      "limitations": [
+        "Strict threshold only",
+        "Individual updates, not sweeps or arithmetic work",
+        "No O(n log n) claim",
+        "No uniform ordinary LSI for untrimmed law"
+      ]
+    },
+    {
+      "id": "integrable-covariance",
+      "statement": "Under arbitrary mixed pinning and scalar occupied-zero multiplier 0<s<=1, Cov(X)<= (1+A*s) Diag(E X), with A depending only on the fixed envelope.",
+      "evidence_type": "written small-field proof plus imported influence/computation-tree results",
+      "proof_location": "paper.tex: lem:stability",
+      "dependencies": [
+        "Feng–Guo–Yang v2 Theorem 24, Proposition 14, Lemmas 27/29 and equation (15)"
+      ],
+      "finite_verifier_scope": "Pinning/tilt algebra only; no full covariance certificate."
+    },
+    {
+      "id": "startup-trimming",
+      "statement": "Deterministic high-degree/high-bias sites have uniformly small zero probabilities after two coupon-collector windows; retained conditional marginals are polynomially bounded and retained dynamics use the original site clock.",
+      "evidence_type": "written probabilistic proof",
+      "proof_location": "paper.tex: lem:update, lem:burn, eq:b, eq:coretime",
+      "dependencies": [
+        "Parameter envelope",
+        "Attractiveness",
+        "Miao–Yin v1 entropy criterion"
+      ],
+      "finite_verifier_scope": "Exact selected retained-clock and conditional-law identities; not uniform rare-event bound."
+    },
+    {
+      "id": "finite-horizon-transfer",
+      "statement": "For full-support finite product-space heatbath dynamics and deterministic pinning F, d_P(b+t)<=d_Q(t)+sup_z P_z(exists j=0..t: X_{b+j} notin F)+mu(F^c), with Q retaining the original site clock.",
+      "evidence_type": "elementary written coupling proof",
+      "proof_location": "paper.tex: lem:transfer",
+      "dependencies": [
+        "Full support",
+        "Fixed state-independent selection",
+        "Heatbath conditional-law agreement"
+      ],
+      "finite_verifier_scope": "Not mechanically proved.",
+      "limitations": [
+        "Not claimed as a new general theorem",
+        "Constrained supports need extra compatibility"
+      ]
+    },
+    {
+      "id": "linear-relaxation",
+      "statement": "The original chain has inverse gap <=n(1+kappa)e^A, kappa=max(1,lambda), including mixed-pinned residual systems. Fixed positive nonuniform selection gives inverse gap <=(1+kappa)e^A/min_v p_v.",
+      "evidence_type": "imported gap consequence and elementary Dirichlet comparison",
+      "proof_location": "paper.tex: prop:gap and following comparison",
+      "dependencies": [
+        "integrable-covariance",
+        "Miao–Yin v1 Proposition 2.1"
+      ],
+      "finite_verifier_scope": "No spectral-gap computation is asserted.",
+      "limitations": [
+        "Nonuniform conclusion is relaxation, not worst-start mixing",
+        "Zero site probabilities excluded"
+      ]
+    },
+    {
+      "id": "entropy-obstructions",
+      "statement": "Two isolated vertices give divergent ordinary inverse LSI as one occupied marginal vanishes despite uniform refresh mixing; the beta=1,gamma=2,lambda_v=1 star has conditional/unconditional centre occupied odds ratio (3/2)^d.",
+      "evidence_type": "written examples with bounded exact algebraic checks",
+      "proof_location": "paper.tex: sec:obstructions",
+      "dependencies": [
+        "CFYZ v1 Definition 1.9 for comparator"
+      ],
+      "finite_verifier_scope": "Stars d=1..7; four rational indicator masses; entropy expression remains symbolic.",
+      "limitations": [
+        "Does not exclude every other entropy route"
+      ]
+    }
+  ],
+  "assurance": {
+    "formal_verification": false,
+    "independent_reproduction": false,
+    "external_human_peer_review": false,
+    "exhaustive_novelty_certification": false
+  }
+}

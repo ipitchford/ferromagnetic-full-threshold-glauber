@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the exact candidate version and retain its unrefereed status."
+title: "Near-linear Glauber mixing below the full ferromagnetic field threshold"
+type: article
+authors:
+  - name: Anonymous
+version: 2.0.0-candidate
+date-released: 2026-10-14
+doi: 10.5281/zenodo.23359097
+repository-code: https://github.com/ipitchford/ferromagnetic-full-threshold-glauber
+license: CC0-1.0
+abstract: "Unrefereed written-proof candidate for near-linear worst-start uniformly random-site heatbath mixing throughout a strict heterogeneous ferromagnetic field regime, with unrestricted degree. Original code is separately MIT licensed."
+
